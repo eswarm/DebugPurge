@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Debug Purge</string>
+    <string name="uninstall">Uninstall</string>
+</resources>
