@@ -6,7 +6,7 @@
     android:initialLayout="@layout/widget_layout"
     android:resizeMode="horizontal|vertical"
     android:widgetCategory="home_screen"
-    android:previewImage="@drawable/purge"
+    android:previewImage="@drawable/feature_graphic"
     android:minResizeHeight="120dp"
     android:minResizeWidth="240dp">
 </appwidget-provider>
