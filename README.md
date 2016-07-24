@@ -8,4 +8,4 @@ A widget is also provided for easy access from the home screen.
 
 You can find it on the play store @ https://play.google.com/store/apps/details?id=in.eswarm.debugpurge
 
-Credits : https://github.com/sudhirkhanger For the original idea 
+Credits : https://github.com/sudhirkhanger for the idea 
