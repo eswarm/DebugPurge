@@ -4,11 +4,14 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/widgetItemBg"
     android:weightSum="1">
 
     <LinearLayout
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingStart="4dp"
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
