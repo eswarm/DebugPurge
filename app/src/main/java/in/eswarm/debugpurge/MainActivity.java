@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                 debuggable = cert.getSubjectX500Principal().getName().contains(CN) ||
                         cert.getSubjectX500Principal().getName().equals(DEBUG_DN);
 
-                Log.i(TAG, pkgInfo.packageName + " : " + cert.getSubjectX500Principal().getName() + " " + debuggable);
+                //Log.i(TAG, pkgInfo.packageName + " : " + cert.getSubjectX500Principal().getName() + " " + debuggable);
                 if (debuggable)
                     break;
             }
