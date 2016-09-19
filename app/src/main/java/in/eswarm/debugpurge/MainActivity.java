@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mAppList;
     private static final X500Principal DEBUG_DN = new X500Principal("CN=Android Debug,O=Android,C=US");
 
+    private static final String CN = "CN=Android Debug";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,7 +114,10 @@ public class MainActivity extends AppCompatActivity {
             for (int i = 0; i < signatures.length; i++) {
                 ByteArrayInputStream stream = new ByteArrayInputStream(signatures[i].toByteArray());
                 X509Certificate cert = (X509Certificate) cf.generateCertificate(stream);
-                debuggable = cert.getSubjectX500Principal().equals(DEBUG_DN);
+                debuggable = cert.getSubjectX500Principal().getName().contains(CN) ||
+                        cert.getSubjectX500Principal().getName().equals(DEBUG_DN);
+
+                Log.i(TAG, pkgInfo.packageName + " : " + cert.getSubjectX500Principal().getName() + " " + debuggable);
                 if (debuggable)
                     break;
             }
